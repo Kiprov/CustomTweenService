@@ -1,5 +1,5 @@
 # CustomTweenService
-A somewhat better alternative to Roblox tween service. Provides same functionality with more easing direction
+A somewhat better alternative to Roblox tween service. Provides same functionality with more easing directions
 
 Notes:
 
