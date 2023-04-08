@@ -13,6 +13,29 @@ Then use Play() on the created CustomTween.
 
 (Don't forget it was designed to tween inside scripts in the first place, so if you want to tween parts, use RunService to assign value from the tween.)
 
+Showcase Code:
+
+```lua
+local TweenInterpolation = require(PathToModule)
+local RunService = game:GetService("RunService")
+local CustomTweenInfo = TweenInterpolation.CustomTweenInfo.new(0,false,0,5)
+local CustomTween = TweenInterpolation:Create(
+2,
+Vector3.new(61,24,26),
+Vector3.new(0,0,0),
+TweenInterpolation.Enums.EasingStyle.Back,
+TweenInterpolation.Enums.EasingDirection.OutIn,
+CustomTweenInfo
+)
+task.wait(2)
+CustomTween:Play()
+local part = game.Workspace:FindFirstChildOfClass("BasePart")
+part.Anchored = true
+RunService.Heartbeat:Connect(function(DeltaTime)
+    part.Position = CustomTween.Value
+end)
+```
+
 # Proportions of the provided semi-classes:
 
 
