@@ -15,11 +15,14 @@ Then use Play() on the created CustomTween.
 
 # Proportions of the provided semi-classes:
 
+
 Module:
+
 
 Enums - has every one of the custom ease styles/directions
 
 CustomTweenInfo - makes the CustomTweenInfo class, which has those arguments:
+
 
 RepeatCount - the number of times you want to repeat your tween
 
@@ -34,7 +37,9 @@ Period = period of the CustomTween (leave nil if you don't know what that is)
 
 Tweening Module:
 
+
 Create() - creates a new tween with provided arguments:
+
 
 Time - provided duration of the CustomTween in seconds
 
@@ -51,15 +56,18 @@ CustomTweenInfo - custom tween info, which explains itself 
 
 Tween:
 
+
 Play() - plays the tween
 
 Pause() - pauses the tween
 
 Stop() - stops the tween
 
+
 as well it has some proporties:
 
-Completed - sets to true after the tween is completed and after the tick turns bad to false (in the feature I want to replace it with my Event-Emulator)
+
+Completed - sets to true after the tween is completed and after the tick turns back to false (in the feature I want to replace it with my Event-Emulator)
 
 Value - output value that is being tweened
 
