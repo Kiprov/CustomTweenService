@@ -42,59 +42,59 @@ end)
 Module:
 
 
-Enums - has every one of the custom ease styles/directions
+**Enums** - has every one of the custom ease styles/directions
 
-CustomTweenInfo - makes the CustomTweenInfo class, which has those arguments:
+**CustomTweenInfo** - makes the CustomTweenInfo class, which has those arguments:
 
 
-RepeatCount - the number of times you want to repeat your tween
+**RepeatCount** - the number of times you want to repeat your tween
 
-Reverses - If set to true, then the value will be tweening backwards
+**Reverses** - If set to true, then the value will be tweening backwards
 
-DelayTime - time between each repeat
+**DelayTime** - time between each repeat
 
-Amplitude = amplitude of the CustomTween (leave nil if you don't know what that is)
+**Amplitude** = amplitude of the CustomTween (leave nil if you don't know what that is)
 
-Period = period of the CustomTween (leave nil if you don't know what that is)
+**Period** = period of the CustomTween (leave nil if you don't know what that is)
 
 
 Tweening Module:
 
 
-Create() - creates a new tween with provided arguments:
+**Create()** - creates a new tween with provided arguments:
 
 
-Time - provided duration of the CustomTween in seconds
+**Time** - provided duration of the CustomTween in seconds
 
-StartingValue - starting value you want to CustomTween
+**StartingValue** - starting value you want to CustomTween
 
-EndValue - ending value you want to end with
+**EndValue** - ending value you want to end with
 
-EasingStyle (Main Module Only) - the easing style with which you want to tween
+**EasingStyle** (Main Module Only) - the easing style with which you want to tween
 
-EasingDirection - easing  direction you want to tween with
+**EasingDirection** - easing  direction you want to tween with
 
-CustomTweenInfo - custom tween info, which explains itself 
+CustomTweenInfo** - custom tween info, which explains itself 
 
 
 Tween:
 
 
-Play() - plays the tween
+**Play()** - plays the tween
 
-Pause() - pauses the tween
+**Pause()** - pauses the tween
 
-Stop() - stops the tween
+**Stop()** - stops the tween
 
 
 as well it has some proporties:
 
 
-Completed - sets to true after the tween is completed and after the tick turns back to false (in the feature I want to replace it with my Event-Emulator)
+**Completed** - sets to true after the tween is completed and after the tick turns back to false (in the feature I want to replace it with my Event-Emulator)
 
-Value - output value that is being tweened
+**Value** - output value that is being tweened
 
-TimeStamp - time of the tween, 0- time provided in Create()
+**TimeStamp** - time of the tween, 0- time provided in Create()
 
 # Notes:
 
