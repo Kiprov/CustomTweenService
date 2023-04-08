@@ -74,7 +74,7 @@ Tweening Module:
 
 **EasingDirection** - easing  direction you want to tween with
 
-CustomTweenInfo** - custom tween info, which explains itself 
+**CustomTweenInfo** - custom tween info, which explains itself 
 
 
 Tween:
