@@ -44,7 +44,7 @@ Module:
 
 **Enums** - has every one of the custom ease styles/directions
 
-**CustomTweenInfo** - makes the CustomTweenInfo class, which has those arguments:
+**CustomTweenInfo** - makes the CustomTweenInfo "object", which has those arguments:
 
 
 **RepeatCount** - the number of times you want to repeat your tween
