@@ -1,19 +1,15 @@
 # CustomTweenService
-A somewhat better alternative to Roblox's tween service. provides the same functionality with more easing directions. I created this module to provide tweening inside scripts.
+A somewhat better alternative to Roblox's tween service. provides much better functionality with more easing directions. I created this module to provide tweening inside scripts.
 
-To begin, create CustomTweenInfo and assign arguments to it.
-
-Then require the module with the ease and style you want.
-
-Alternativly, you can require the main module and just provide 1 more argument to directly point to the needed ease style. I don't think it affects performance that much.
-
-Use Create() on the required module and fill the arguments it says to fill.
-
-Then use Play() on the created CustomTween.
+> To begin, create CustomTweenInfo and assign arguments to it.
+> Then require the module with the ease and style you want.
+> Alternativly, you can require the main module and just provide 1 more argument to directly point to the needed ease style. I don't think it affects performance that much.
+> Use Create() on the required module and fill the arguments it says to fill.
+> Then use Play() on the created CustomTween.
 
 (Don't forget it was designed to tween inside scripts in the first place, so if you want to tween parts, use RunService to assign value from the tween.)
 
-Showcase Code:
+## Showcase Code:
 
 ```lua
 local TweenInterpolation = require(PathToModule)
@@ -36,59 +32,54 @@ RunService.Heartbeat:Connect(function(DeltaTime)
 end)
 ```
 
-# Proportions of the provided semi-classes:
+# Properties of the provided classes:
 
 
-Module:
+## Module:
 
 
 **Enums** - has every one of the custom ease styles/directions
 
 **CustomTweenInfo** - makes the CustomTweenInfo "object", which has those arguments:
 
+- **RepeatCount** - the number of times you want to repeat your tween
 
-**RepeatCount** - the number of times you want to repeat your tween
+- **Reverses** - if set to true, then the value will be tweening backwards
 
-**Reverses** - If set to true, then the value will be tweening backwards
+- **DelayTime** - time between each repetition
 
-**DelayTime** - time between each repeat
+- **Amplitude** = amplitude of the CustomTween (leave nil if you don't know what that is)
 
-**Amplitude** = amplitude of the CustomTween (leave nil if you don't know what that is)
-
-**Period** = period of the CustomTween (leave nil if you don't know what that is)
-
-
-Tweening Module:
+- **Period** = period of the CustomTween (leave nil if you don't know what that is)
 
 
-**Create()** - creates a new tween with provided arguments:
+## Tweening Module:
 
 
-**Time** - provided duration of the CustomTween in seconds
+**Create()** - creates a new tween with the provided arguments:
 
-**StartingValue** - starting value you want to CustomTween
+- **Time** - provided duration of the CustomTween in seconds
 
-**EndValue** - ending value you want to end with
+- **StartingValue** - starting value you want to start tween with
 
-**EasingStyle** (Main Module Only) - the easing style with which you want to tween
+- **EndValue** - ending value you want to end tween with
 
-**EasingDirection** - easing  direction you want to tween with
+- **EasingStyle** (Main Module Only) - easing style you want to tween with
 
-**CustomTweenInfo** - custom tween info, which explains itself 
+- **EasingDirection** - easing  direction you want to tween with
+
+- **CustomTweenInfo** - custom tween info, self-explanatory
 
 
-Tween:
-
-
+## Tween:
+\
 **Play()** - plays the tween
-
+\
 **Pause()** - pauses the tween
-
+\
 **Stop()** - stops the tween
 
-
-as well it has some proporties:
-
+### Tween properties:
 
 **Completed** - sets to true after the tween is completed and after the tick turns back to false (in the feature I want to replace it with my Event-Emulator)
 
@@ -99,6 +90,6 @@ as well it has some proporties:
 # Notes:
 
 1. This work is based on: https://github.com/EmmanuelOga/easing
-2. There is A LOT of potential to upgrade this module. Feel free to update the module, just don't forget to paste the source link
-3. I don't think it works on colors since they don't have the needed methods for this
+2. There is A LOT of potential to upgrade this module. Feel free to update it, just don't forget to paste the source link
+3. I don't think it works on colors since they are different from the Vector3 number system
 4. Report bugs immediately after you find one
