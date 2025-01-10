@@ -102,9 +102,9 @@ export type CustomTween = {
             Returns: CustomTween
     </td>
     <tr>
-        <td>new</td>
+        <td>Play</td>
         <td>
-            Creates a new CustomTween
+            Plays the tween <br/> <br/>
             Arguments:
             <table>
                 <tr>
@@ -112,28 +112,70 @@ export type CustomTween = {
                     <td>Type</td>
                     <td>Optional?</td>
                 </tr>
-                <tr>
+		<tr>
                     <td>self</td>
                     <td>CustomTween</td>
                     <td>No</td>
                 </tr>
+            </table> <br/>
+            Returns: void
+    </td>
+    <tr>
+        <td>Pause</td>
+        <td>
+            Pauses the tween, does not fire the Completed event <br/> <br/>
+            Arguments:
+            <table>
                 <tr>
-                    <td>object</td>
-                    <td>Instance or table</td>
+                    <td>Name</td>
+                    <td>Type</td>
+                    <td>Optional?</td>
+                </tr>
+		<tr>
+                    <td>self</td>
+                    <td>CustomTween</td>
                     <td>No</td>
                 </tr>
+            </table> <br/>
+            Returns: void
+    </td>
+    <tr>
+        <td>Cancel</td>
+        <td>
+            Cancels the tween, resets it's internal variables and fires the Completed event<br/> <br/>
+            Arguments:
+            <table>
                 <tr>
-                    <td>goal</td>
-                    <td>table</td>
+                    <td>Name</td>
+                    <td>Type</td>
+                    <td>Optional?</td>
+                </tr>
+		<tr>
+                    <td>self</td>
+                    <td>CustomTween</td>
                     <td>No</td>
                 </tr>
+            </table> <br/>
+            Returns: void
+    </td>
+    <tr>
+        <td>PrepareGC</td>
+        <td>
+            Plays the tween <br/> <br/>
+            Arguments:
+            <table>
                 <tr>
-                    <td>tweenInfo</td>
-                    <td>CustomTweenInfo</td>
-                    <td>Yes</td>
+                    <td>Name</td>
+                    <td>Type</td>
+                    <td>Optional?</td>
+                </tr>
+		<tr>
+                    <td>self</td>
+                    <td>CustomTween</td>
+                    <td>No</td>
                 </tr>
             </table>
-            Returns: CustomTween
+            Returns: void
     </td>
 </table>
 
